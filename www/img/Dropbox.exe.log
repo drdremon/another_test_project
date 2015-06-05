@@ -1,0 +1,18 @@
+Traceback (most recent call last):
+  File "dropbox\client\main.pyc", line 15, in <module>
+  File "zipextimporter.pyc", line 82, in load_module
+  File "autogen_explicit_imports.pyc", line 125, in <module>
+  File "zipextimporter.pyc", line 82, in load_module
+ValueError: bad marshal data (unknown type code)
+Traceback (most recent call last):
+  File "dropbox\client\main.pyc", line 15, in <module>
+  File "zipextimporter.pyc", line 82, in load_module
+  File "autogen_explicit_imports.pyc", line 125, in <module>
+  File "zipextimporter.pyc", line 82, in load_module
+ValueError: bad marshal data (unknown type code)
+Traceback (most recent call last):
+  File "dropbox\client\main.pyc", line 15, in <module>
+  File "zipextimporter.pyc", line 82, in load_module
+  File "autogen_explicit_imports.pyc", line 125, in <module>
+  File "zipextimporter.pyc", line 82, in load_module
+ValueError: bad marshal data (unknown type code)

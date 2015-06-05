@@ -1,22 +1,22 @@
 <?php
 
-require_once __DIR__.'../functions/sql.php';
+require_once __DIR__.'/../functions/sql.php';
 
 /**
  * @return array
  */
 function Photos_getAll(){
 
-
     $sql = 'SELECT * FROM images';
-    $res = mysql_query($sql);
-    $ret = [];
-    while (false !== $row = mysql_fetch_assoc($res)){
-        $ret[] = $row;
-    }
-    return $ret;
+    return Sql_query($sql);
 }
 
-function Photos_insert ($data){
-
+function Photo_insert ($data){
+    $sql = "
+      INSERT INTO images
+      (title, path)
+      VALUES
+      ('".$data['title']."','".$data['image']."')
+      ";
+    Sql_exec($sql);
 }
