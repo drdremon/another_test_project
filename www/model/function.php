@@ -1,11 +1,13 @@
 <?php
 
+require_once __DIR__.'../functions/sql.php';
+
 /**
  * @return array
  */
 function Photos_getAll(){
-    mysql_connect('localhost','root','');
-    mysql_select_db('testing');
+
+
     $sql = 'SELECT * FROM images';
     $res = mysql_query($sql);
     $ret = [];
