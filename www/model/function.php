@@ -1,5 +1,8 @@
 <?php
 
+/**
+ * @return array
+ */
 function Photos_getAll(){
     return [
         ['title'=>'Фото №1','path'=>'/img/photo1.jpg'],
