@@ -4,9 +4,17 @@
  * @return array
  */
 function Photos_getAll(){
-    return [
-        ['title'=>'Фото №1','path'=>'/img/photo1.jpg'],
-        ['title'=>'Фото №2','path'=>'/img/photo2.jpg'],
-        ['title'=>'Фото №3','path'=>'/img/photo3.jpg']
-    ];
+    mysql_connect('localhost','root','');
+    mysql_select_db('testing');
+    $sql = 'SELECT * FROM images';
+    $res = mysql_query($sql);
+    $ret = [];
+    while (false !== $row = mysql_fetch_assoc($res)){
+        $ret[] = $row;
+    }
+    return $ret;
+}
+
+function Photos_insert ($data){
+
 }
